@@ -2,13 +2,19 @@ import java.util.Scanner;
 
 public class Contador {
     public static void main(String[] args) {
+        System.out.println("----------------------------------------------------------------");
+        System.out.println("Contagem:");
+        System.out.println("Para que a Contagem dê certo");
+        System.out.println("O Primeiro parâmetro deve ser MENOR que o segundo");
+        System.out.println("----------------------------------------------------------------");
+
         Scanner terminal = new Scanner(System.in);
 
-        //Colocando o Valor dos parametros
-        System.out.println("Digite o primeiro parâmetro");
+        //Colocando o Valor das variáveis que serão utilizadas nos parametros
+        System.out.println("Digite o primeiro parâmetro:");
         int parametroUm = terminal.nextInt();
 
-        System.out.println("Digite o segundo parâmetro");
+        System.out.println("Digite o segundo parâmetro:");
         int parametroDois = terminal.nextInt();
 
         //Tratando as Excessões
@@ -22,8 +28,8 @@ public class Contador {
     }
 
     /*
-    *Função que verifica se o Parametro Um é maior que o dois.
-    * Depois Conta de 1 até valor da contagem que é o parametroDois - parametroDois e Imprime na tela
+    *Função que verifica se o ParametroUm é maior que o parametroDois.
+    * Depois Conta de 1 até valor da contagem que é o parametroDois - parametroUm e Imprime na tela
     */
     static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
 
