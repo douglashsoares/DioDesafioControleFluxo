@@ -17,7 +17,7 @@ public class Contador {
         System.out.println("Digite o segundo parâmetro:");
         int parametroDois = terminal.nextInt();
 
-        //Tratando as Excessões
+        //Tratando as Exceções
         try {
             contar(parametroUm, parametroDois);
 
